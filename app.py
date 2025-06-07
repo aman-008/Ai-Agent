@@ -11,7 +11,6 @@ load_dotenv()
 client = OpenAI()
 
 
-
 # --- Available tool functions ---
 
 def get_weather(city: str):
@@ -83,7 +82,7 @@ def process_agent_query(query):
 
     while True:
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4.1",
             response_format={"type": "json_object"},
             messages=st.session_state.messages
         )
