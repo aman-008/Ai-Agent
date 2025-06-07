@@ -83,7 +83,7 @@ def process_agent_query(query):
 
     while True:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             response_format={"type": "json_object"},
             messages=st.session_state.messages
         )
