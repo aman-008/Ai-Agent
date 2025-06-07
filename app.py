@@ -12,8 +12,6 @@ client = OpenAI()
 
 
 
-
-
 # --- Available tool functions ---
 
 def get_weather(city: str):
